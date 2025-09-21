@@ -224,6 +224,17 @@
 
 </style></head>
 <body class="bg-slate-50 text-slate-800">
+
+<section id="motivasi" class="min-h-screen flex items-center justify-center bg-sky-900 text-white text-center p-6">
+    <div class="max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">Kebebasan Finansial Bukan Lagi Sekadar Impian.</h1>
+        <p class="mt-4 text-lg md:text-xl text-sky-200">Saatnya Anda mengambil kendali dan mewujudkannya. Peluang ada di depan mata Anda, temukan cara cerdas untuk membangun masa depan yang Anda inginkan, mulai hari ini.</p>
+        <div class="mt-8">
+            <a href="#beranda" class="inline-block bg-amber-500 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-amber-600 transition-transform hover:scale-105">Materi Utama</a>
+        </div>
+    </div>
+</section>
+
 <header class="bg-white/80 backdrop-blur-lg shadow-md sticky top-0 z-50">
 <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
 <div class="text-2xl font-bold text-sky-800">
@@ -1037,6 +1048,19 @@
             });
 
         });
+    </script>
+    <script>
+        // FUNGSI FULLSCREEN PADA KLIK PERTAMA
+        document.addEventListener('click', function() {
+            const elem = document.documentElement;
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+        }, { once: true });
     </script>
 </body>
 </html>
